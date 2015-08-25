@@ -6,6 +6,12 @@
 
 
 
+*api_key é um parâmetro obrigatório para **todas** as chamadas. Você gera sua chave de api através de nosso painel para desenvolvedores*
+
+
+
+
+
 **app/controllers/api/v2/admin_controller.rb**
 
 /api/v2/admin/invite_new_user
@@ -18,11 +24,11 @@ Função usada para convidar um novo usuário para a empresa. Atenção! Essa fu
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*email**
+* email*
 
 
 
@@ -37,13 +43,13 @@ Função usada para alterar dados da empresa
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*name**
+* name*
 
-*site**
+* site*
 
 
 
@@ -58,11 +64,11 @@ Função usada para remover um usuário da empresa
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*id**
+* id*
 
 
 
@@ -79,11 +85,11 @@ Função usada para deletar um alerta de valores
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*id**
+* id*
 
 
 
@@ -98,13 +104,13 @@ Função usada para gerar um alerta caso as depesas do mês ultrapassem o valor 
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*percentage**
+* percentage*
 
-*email* (não precisa ser de um usário cadastrado na plataforma)*
+* email* (não precisa ser de um usário cadastrado na plataforma)
 
 
 
@@ -119,11 +125,11 @@ Função usada para alterar o valor da meta de gastos
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*value**
+* value*
 
 
 
@@ -138,11 +144,11 @@ Função usada para renomear a empresa
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*name**
+* name*
 
 
 
@@ -159,9 +165,9 @@ Função usada para retornar a quantidade de depesas que um usuário possui
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
 
 
@@ -176,21 +182,21 @@ Função usada para criar uma despesa para um usuário
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*pricekm*
+* pricekm
 
-*category_id (este parâmetro OU o 'category' podem ser enviados. Se for o 'category' ele pegará o id buscando pelo nome)*
+* category_id (este parâmetro OU o 'category' podem ser enviados. Se for o 'category' ele pegará o id buscando pelo nome)
 
-*category*
+* category
 
-*report_id (este parâmetro OU o 'report' podem ser enviados. Se for o 'report' ele pegará o id buscando pelo nome)*
+* report_id (este parâmetro OU o 'report' podem ser enviados. Se for o 'report' ele pegará o id buscando pelo nome)
 
-*report*
+* report
 
-*type_expenditure (0 para despesa comum e 1 para transporte)*
+* type_expenditure (0 para despesa comum e 1 para transporte)
 
 
 
@@ -205,9 +211,9 @@ Função usada para retornar a lista de despesas do usuário
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
 
 
@@ -222,11 +228,11 @@ Função usada para apagar uma depesa
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*ids* (pode apagar mais de uma despesa, mandar no formado 'id1,id2,id3,..., idN'. Para apagar uma única, basta mandar 'id')*
+* ids* (pode apagar mais de uma despesa, mandar no formado 'id1,id2,id3,..., idN'. Para apagar uma única, basta mandar 'id')
 
 
 
@@ -241,11 +247,11 @@ Função usada para retornar os dados de uma despesa específica
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*id**
+* id*
 
 
 
@@ -260,9 +266,9 @@ Função usada para retornar a lista de categorias disponíveis
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
 
 
@@ -287,13 +293,13 @@ Caso valor menor que o da despesa: Aprovado parcialmente
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*id**
+* id*
 
-*value_approved**
+* value_approved*
 
 
 
@@ -310,11 +316,11 @@ Função usada para criar um novo relatório na conta do usuário
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*title**
+* title*
 
 
 
@@ -329,9 +335,9 @@ Lista os relatórios ligados ao usuário
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
 
 
@@ -346,13 +352,13 @@ Função usada para aprovar uma despesa do usuário
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*id**
+* id*
 
-*value_approved**
+* value_approved*
 
 
 
@@ -367,13 +373,13 @@ Função usada para alterar a situação de um relatório
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*id**
+* id*
 
-*situation* (0 para 'Criado', 1 para 'Aguardando Análise', 2 para 'Aguardando pagamento' ou 3 para 'Fechado')*
+* situation* (0 para 'Criado', 1 para 'Aguardando Análise', 2 para 'Aguardando pagamento' ou 3 para 'Fechado')
 
 
 
@@ -388,11 +394,11 @@ Função usada para deletar um relatório
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*id**
+* id*
 
 
 
@@ -407,13 +413,13 @@ Função usada para renomear um relatório
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*id**
+* id*
 
-*name**
+* name*
 
 
 
@@ -428,13 +434,13 @@ Função usada para remover despesas de um relatório
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*id**
+* id*
 
-*ids* (lista de ids das depesas no formato '1,2,3,etc')*
+* ids* (lista de ids das depesas no formato '1,2,3,etc')
 
 
 
@@ -449,11 +455,11 @@ Função usada para aprovar todas as depesas de um relatório com o valor total
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*id**
+* id*
 
 
 
@@ -468,11 +474,11 @@ Função usada para reprovar todas as depesas de um relatório com o valor total
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*id**
+* id*
 
 
 
@@ -489,17 +495,17 @@ Função usada para criar uma nova requisição na conta do usuário
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*motive**
+* motive*
 
-*value**
+* value*
 
-*date* (formato brasileiro dd/mm/aaaa)*
+* date* (formato brasileiro dd/mm/aaaa)
 
-*recipient (id do usuário gestor que avaliará a requisição. Caso não tenha, a requisição será aberta a todos os gestores)*
+* recipient (id do usuário gestor que avaliará a requisição. Caso não tenha, a requisição será aberta a todos os gestores)
 
 
 
@@ -514,13 +520,13 @@ Função usada para alterar a situação de uma requisição
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*id**
+* id*
 
-*situation* (0 para 'Criado', 1 para 'Aguardando Análise', 2 para 'Aguardando pagamento' ou 3 para 'Fechado')*
+* situation* (0 para 'Criado', 1 para 'Aguardando Análise', 2 para 'Aguardando pagamento' ou 3 para 'Fechado')
 
 
 
@@ -537,11 +543,11 @@ Função usada para criar um novo usuário.
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*email**
+* email*
 
-*password**
+* password*
 
 
 
@@ -556,25 +562,25 @@ Função usada para alterar um ou mais itens do perfil do usuário
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
-*name*
+* name
 
-*position*
+* position
 
-*bank*
+* bank
 
-*agency*
+* agency
 
-*account*
+* account
 
-*cpf*
+* cpf
 
-*bitcoin_wallet*
+* bitcoin_wallet
 
-*pricekm*
+* pricekm
 
 
 
@@ -589,7 +595,7 @@ Função usada para ler a lista de categorias de despesas que são aceitas.
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
 
 
@@ -604,9 +610,9 @@ Função usada para ler a lista de relatórios do usuário
 
 Parâmetros:
 
-*api_key**
+* api_key*
 
-*token**
+* token*
 
 
 
