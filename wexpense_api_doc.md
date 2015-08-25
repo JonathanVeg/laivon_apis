@@ -1,14 +1,37 @@
+
 **Todos os métodos da API precisam ser chamados via post**
+
 
 *Parâmetros com * são obrigatórios*
 
 
 
-
-
 *api_key é um parâmetro obrigatório para **todas** as chamadas. Você gera sua chave de api através de nosso painel para desenvolvedores*
 
+Todos os retornos são em formato JSON, como no exemplo:
 
+
+```
+{
+   "success":true,
+   "message":"se tiver erro ela virá aqui e o success será falso",
+   "retorno1":"r1",
+   "retorno2":"r2",
+   "retorno3":[
+      {
+         "array1a":"valor1a",
+         "array1b":"valor1b",
+         "array1c":"valor1c"
+      },
+      {
+         "array2a":"valor2a",
+         "array2b":"valor2b",
+         "array2c":"valor2c"
+      }
+   ]
+}
+
+```
 
 
 
