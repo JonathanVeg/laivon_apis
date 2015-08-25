@@ -6,7 +6,13 @@
 
 
 
-*api_key é um parâmetro obrigatório para **todas** as chamadas. Você gera sua chave de api através de nosso painel para desenvolvedores*
+*api_key* é um parâmetro obrigatório para **todas** as chamadas. Você gera sua chave de api através de nosso painel para desenvolvedores
+
+Todas as chamas são feitas para:
+
+```
+   www.wexpense.com/ (função desejada)
+```
 
 Todos os retornos são em formato JSON, como no exemplo:
 
@@ -33,9 +39,10 @@ Todos os retornos são em formato JSON, como no exemplo:
 
 ```
 
+**Funções para uso do administrador da empresa**
 
 
-**app/controllers/api/v2/admin_controller.rb**
+
 
 /api/v2/admin/invite_new_user
 
@@ -96,7 +103,10 @@ Parâmetros:
 
 
 
-**app/controllers/api/v2/business_controller.rb**
+**Funções para controle da empresa do usuário**
+
+
+
 
 /api/v2/business/delete_alert_goal
 
@@ -176,7 +186,10 @@ Parâmetros:
 
 
 
-**app/controllers/api/v2/expenditures_controller.rb**
+**Funções para controle das despesas do usuário**
+
+
+
 
 /api/v2/expenditures/count
 
@@ -327,7 +340,10 @@ Parâmetros:
 
 
 
-**app/controllers/api/v2/report_controller.rb**
+**Funções para gestão dos relatórios dos usuários**
+
+
+
 
 /api/v2/report/create
 
@@ -506,8 +522,6 @@ Parâmetros:
 
 
 
-**app/controllers/api/v2/request_controller.rb**
-
 /api/v2/request/create
 
 
@@ -554,7 +568,10 @@ Parâmetros:
 
 
 
-**app/controllers/api/v2/users_controller.rb**
+**Funções para gestão dos usuários da empresa**
+
+
+
 
 /api/v2/users/create
 
