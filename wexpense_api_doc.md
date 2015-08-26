@@ -11,7 +11,7 @@
 Todas as chamas são feitas para:
 
 ```
-   www.wexpense.com/ (função desejada)
+  www.wexpense.com/ (função desejada)
 ```
 
 Todos os retornos são em formato JSON, como no exemplo:
@@ -39,7 +39,7 @@ Todos os retornos são em formato JSON, como no exemplo:
 
 ```
 
-Exeḿplo de requisição em JavaScript (*usando JQuery*)
+Exemplo de requisição em JavaScript (*usando JQuery*)
 
 ```
 var url = 'http://www.wexpense.com/api/v2/users/list_reports';
