@@ -39,6 +39,23 @@ Todos os retornos são em formato JSON, como no exemplo:
 
 ```
 
+Exeḿplo de requisição em JavaScript (*usando JQuery*)
+
+```
+var url = 'http://www.wexpense.com/api/v2/users/list_reports';
+
+$.post(url, {'api_key': 'sua_api_key_para_usar_a_api', 'token': 'token_do_usuario'}, function(data) {
+    if (data.success == true) {
+        // tudo ocorreu bem
+    } else {
+        // deu algum erro na sua requisição :(
+        alert(data.message);
+    }
+});
+
+```
+
+
 **Funções para uso do administrador da empresa**
 
 
