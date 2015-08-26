@@ -54,6 +54,54 @@ $.post(url, {'api_key': 'sua_api_key_para_usar_a_api', 'token': 'token_do_usuari
 });
 
 ```
+Possíveis retornos para a requisição acima
+
+Com sucesso
+```
+{
+    "success": true,
+    "message": "",
+    "reports": [{
+        "id": 153,
+        "name": "Agosto15",
+        "user_id": 266,
+        "created_at": "16 de Ago",
+        "situation": 0,
+        "situation_name": "Criado",
+        "from_test": "",
+        "evaluator_id": "",
+        "recipient_id": "",
+        "value": 43.5,
+        "value_approved": 0,
+        "user": "Jonathan Silva",
+        "quantity": 5
+    }, {
+        "id": 146,
+        "name": "Julho15",
+        "user_id": 266,
+        "created_at": "27 de Jul",
+        "situation": 0,
+        "situation_name": "Criado",
+        "from_test": "",
+        "evaluator_id": 267,
+        "evaluator_name": "Heron Júnior",
+        "recipient_id": "",
+        "value": 29.71,
+        "value_approved": 0,
+        "user": "Jonathan Silva",
+        "quantity": 3
+    }]
+}
+```
+Sem sucesso
+```
+{
+    "success": false,
+    "message": "Login inválido"
+}
+```
+
+
 
 
 **Funções para uso do administrador da empresa**
