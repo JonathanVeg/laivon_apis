@@ -1,4 +1,8 @@
 
+
+Arquivo de documentação da API pública do [Wexpense](http://www.wexpense.com)
+Caso tenha dúvidas técnicas, entre em contato por: *jonathan@laivon.com*
+
 **Todos os métodos da API precisam ser chamados via post**
 
 
